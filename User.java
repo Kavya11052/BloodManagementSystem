@@ -1,5 +1,11 @@
-package com.example.demo.model;
-import jakarta.persistence.*;
+package com.example.BloodBank.model;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "users")
@@ -16,7 +22,7 @@ public class User {
     private String password;
 
     @Column(name = "role", nullable = false)
-    private String role; // e.g., ADMIN, DONOR, STAFF
+    private String role; // e.g., ADMIN, DONOR,
 
     public User() {}
 
